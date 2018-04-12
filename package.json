@@ -1,0 +1,13 @@
+{
+  "name": "replace-with-dictionary",
+  "description": "",
+  "version": "0.0.1",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "argv": "0.0.2",
+    "iconv-lite": "^0.4.19",
+    "jschardet": "^1.6.0",
+    "replace-in-file": "^3.1.0"
+  }
+}
