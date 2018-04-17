@@ -1,10 +1,10 @@
 # Replace with dictionary
 
-リストで指定したファイルを対象に、辞書で定義した語句の置換を実行します。
+辞書に定義した語句で置換を実行します。置換対象は単一のファイルだけでなく、ファイルパスを列挙したリストを用いて一度に複数を指定することもできます。
 
 ## リスト
 
-置換を実行したいファイルを1行1パスで書きます。
+テキストファイルです。置換したいファイルを1行ずつ記述します。
 
 例（list.txt）：
 
@@ -16,18 +16,29 @@
 
 ## 辞書
 
-置換の組み合わせを配列で指定します。正規表現を書くこともできます。
+JavaScriptファイルです。置換したい語句の組み合わせを配列で指定します。正規表現を書くこともできます。
 
 例（dictionary.js）：
 
 ```js
 module.exports = [
+
   ['foo', 'bar'],
   ['<li(.*)>foo</li>', '<li$1>bar</li>'],
+  ['(<h\\d{1}.*>)見出し(</h(\\d{1})>)', '$1heading$2'],
+
 ];
 ```
 
 ## 使用法（CLI）
+
+### 単一ファイルを置換する
+
+```
+$ node <path_to_replace_with_dictionary>/index.js -d <path_to_dictionary>/<your_dictionary>.js -f <path_to_file>/<your_file>.html
+```
+
+### リストを用いて複数ファイルを置換する
 
 ```
 $ node <path_to_replace_with_dictionary>/index.js -d <path_to_dictionary>/<your_dictionary>.js -l <path_to_filelist>/<your_filelist>.txt
