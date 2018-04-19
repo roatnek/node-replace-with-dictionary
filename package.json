@@ -1,13 +1,25 @@
 {
   "name": "replace-with-dictionary",
-  "description": "",
+  "description": "Replace words with dictionary.",
   "version": "0.0.1",
-  "private": true,
+  "author": "Kentaro Tanaka <tnkktr@gmail.com>",
   "main": "index.js",
   "dependencies": {
     "argv": "0.0.2",
     "iconv-lite": "^0.4.19",
     "jschardet": "^1.6.0",
     "replace-in-file": "^3.1.0"
-  }
+  },
+  "homepage": "https://github.com/roatnek/node-replace-with-dictionary",
+  "bugs": {
+    "url": "https://github.com/roatnek/node-replace-with-dictionary/issues"
+  },
+  "keywords": [
+    "replace"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roatnek/node-replace-with-dictionary.git"
+  },
+  "license": "MIT"
 }
