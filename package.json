@@ -1,7 +1,7 @@
 {
   "name": "replace-with-dictionary",
   "description": "Replace words with dictionary.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Kentaro Tanaka <tnkktr@gmail.com>",
   "main": "index.js",
   "dependencies": {
