@@ -35,7 +35,7 @@ module.exports = [
 ### 単一ファイルを置換する
 
 ```
-$ replace-with-dictionary -d <path_to_dictionary>/<your_dictionary>.js -f <path_to_file>/<your_file>.html
+$ replace-with-dictionary -d <path_to_dictionary>/<your_dictionary>.js -f <path_to_your_target_file>
 ```
 
 ### リストを用いて複数ファイルを置換する
