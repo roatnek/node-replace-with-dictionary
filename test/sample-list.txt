@@ -1,0 +1,2 @@
+test/target-ja.html
+test/target-ja-sjis.html
